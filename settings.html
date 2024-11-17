@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="settings-style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- font awesome -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https:://www.fonts.gstatic.com" />
+    <!-- google fonts -->
+    <title>settings</title>
+  </head>
+  <body>
+    <div class="settings">
+      <aside>
+        <h3>Mahdi</h3>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-chart-bar fa-fw"></i>
+              <span>dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="settings.html">
+              <i class="fas fa-gear fa-fw"></i>
+              <span>settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="far fa-user fa-fw"></i>
+              <span>profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <i class="fas fa-diagram-project fa-fw"></i>
+              <span>projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fas fa-graduation-cap fa-fw"></i>
+              <span>courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="freinds.html">
+              <i class="far fa-circle-user fa-fw"></i>
+              <span>freinds</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html">
+              <i class="far fa-file fa-fw"></i>
+              <span>files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="far fa-credit-card fa-fw"></i>
+              <span>plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content">
+        <nav>
+          <div class="search">
+            <i class="fas fa-search fa-fw"></i>
+            <input type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="notifcation">
+            <i class="far fa-bell fa-fw"></i>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </nav>
+        <h1>settings</h1>
+        <div class="wrapper">
+          <div class="site-control">
+            <h2>site control</h2>
+            <p>control the page is there a maintenance</p>
+            <div class="website-control">
+              <div>
+                <span>website control</span>
+                <p>Open/Close Website And Type The Reason</p>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" />
+              </div>
+            </div>
+            <textarea placeholder="Close Message Content"></textarea>
+          </div>
+          <div class="general-info">
+            <h2>general info</h2>
+            <p>general information about your account</p>
+            <form>
+              <div>
+                <label for="f-name">first name</label>
+                <input type="text" id="f-name" />
+              </div>
+              <div>
+                <label for="l-name">last name</label>
+                <input type="text" id="l-name" />
+              </div>
+              <div>
+                <label for="email">email</label>
+                <input type="email" id="email" disabled placeholder="m@nn.sa" />
+              </div>
+            </form>
+          </div>
+          <div class="security-info">
+            <h2>security info</h2>
+            <p>Security Information About Your Account</p>
+            <div class="info">
+              <div>
+                <span>password</span>
+                <p>last change on 25/10/2021</p>
+              </div>
+              <div>
+                <a href="settings.html">change</a>
+              </div>
+            </div>
+            <div class="info">
+              <div>
+                <span>two-factor authentication</span>
+                <p>enabel/disabel the feature</p>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" />
+              </div>
+            </div>
+            <div class="info">
+              <div>
+                <span>devices</span>
+                <p>check the login device list</p>
+              </div>
+              <div>
+                <a href="settings.html">device</a>
+              </div>
+            </div>
+          </div>
+          <div class="social-info">
+            <h2>social info</h2>
+            <p>social media information</p>
+            <form>
+              <div>
+                <input type="text" placeholder="Twitter Username" />
+                <i class="fab fa-twitter fa-fw"></i>
+              </div>
+              <div>
+                <input type="text" placeholder="Facebook Username" />
+                <i class="fab fa-facebook-f fa-fw"></i>
+              </div>
+              <div>
+                <input type="text" placeholder="Linkedin Username" />
+                <i class="fab fa-linkedin fa-fw"></i>
+              </div>
+              <div>
+                <input type="text" placeholder="Youtube Username" />
+                <i class="fab fa-youtube fa-fw"></i>
+              </div>
+            </form>
+          </div>
+          <div class="widgets-control">
+            <h2>widgets control</h2>
+            <p>show/hide widgets</p>
+            <div>
+              <input id="quick-draft" checked type="checkbox" />
+              <label for="quick-draft">quick draft</label>
+            </div>
+            <div>
+              <input id="yearly-targets" checked type="checkbox" />
+              <label for="yearly-targets">yearly targets</label>
+            </div>
+            <div>
+              <input id="tickets-statistics" checked type="checkbox" />
+              <label for="tickets-statistics">tickets statistics</label>
+            </div>
+            <div>
+              <input id="latest-news" checked type="checkbox" />
+              <label for="latest-news">latest news</label>
+            </div>
+            <div>
+              <input id="latest-tasks" type="checkbox" />
+              <label for="latest-tasks">latest tasks</label>
+            </div>
+            <div>
+              <input id="top-search-items" checked type="checkbox" />
+              <label for="top-search-item">top search items</label>
+            </div>
+          </div>
+          <div class="backup-manger">
+            <h2>backup manger</h2>
+            <p>control backup time and location</p>
+            <div class="choose">
+              <input name="time" id="daily" checked type="radio" />
+              <label for="daily">daily</label>
+            </div>
+            <div class="choose">
+              <input name="time" id="weekly" type="radio" />
+              <label for="weekly">weekly</label>
+            </div>
+            <div class="choose">
+              <input name="time" id="monthly" type="radio" />
+              <label for="monthly">monthly</label>
+            </div>
+            <div class="servers">
+              <div class="location">
+                <input name="location" id="megaman" type="radio" />
+                <label for="megaman">
+                  <i class="fas fa-server fa-fw"></i>
+                  <span>megaman</span>
+                </label>
+              </div>
+              <div class="location">
+                <input name="location" checked id="zero" type="radio" />
+                <label for="zero">
+                  <i class="fas fa-server fa-fw"></i>
+                  <span>zero</span>
+                </label>
+              </div>
+              <div class="location">
+                <label for="sigma">
+                  <input name="location" id="sigma" type="radio" />
+                  <i class="fas fa-server fa-fw"></i>
+                  <span>sigma</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
